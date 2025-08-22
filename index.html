@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +33,11 @@
         .dark .bg-white {
             background-color: #2d3748;
         }
-
+        
+        .dark .bg-gray-100 {
+            background-color: #2d3748;
+        }
+        
         .dark .text-gray-900 {
             color: #f7fafc;
         }
@@ -53,7 +57,7 @@
         .dark .text-gray-500 {
             color: #718096;
         }
-
+        
         .dark .bg-gray-50 {
             background-color: #4a5568;
         }
@@ -61,71 +65,71 @@
         .dark .border-gray-200 {
             border-color: #4a5568;
         }
-
+        
         .dark .collapsible-experience summary > div p {
-            color: #a0aec0;
+          color: #a0aec0;
         }
-
+        
         .dark .collapsible-experience summary h3 {
-            color: #f7fafc;
+          color: #f7fafc;
         }
-
+        
         .dark .collapsible-experience::before {
             background-color: #14b8a6;
             border-color: #1a202c;
         }
-
+        
         .dark .collapsible-experience:not(:last-child)::after {
             background-color: #4a5568;
         }
-
+        
         .dark .fixed-nav {
             background-color: rgba(45, 55, 72, 0.9);
             box-shadow: -4px 0 10px rgba(26, 32, 44, 0.5);
         }
-
-            .dark .fixed-nav a {
-                color: #99f6e4;
-            }
-
-                .dark .fixed-nav a:hover {
-                    background-color: #115e59;
-                    color: #ffffff;
-                }
-
-                .dark .fixed-nav a.active {
-                    background-color: #14b8a6;
-                    color: #ffffff;
-                }
-
+        
+        .dark .fixed-nav a {
+            color: #99f6e4;
+        }
+        
+        .dark .fixed-nav a:hover {
+            background-color: #115e59;
+            color: #ffffff;
+        }
+        
+        .dark .fixed-nav a.active {
+            background-color: #14b8a6;
+            color: #ffffff;
+        }
+        
         .dark .text-teal-700, .dark .text-teal-600 {
             color: #99f6e4;
         }
-
+        
         .dark .text-teal-800 {
             color: #f0fdfa;
         }
-
+        
         .dark .bg-teal-100 {
             background-color: #115e59;
         }
-
-        .dark .bg-amber-50 {
+        
+        .dark .bg-teal-50 {
             background-color: #4a5568;
         }
 
         .dark .bg-orange-500 {
             background-color: #f97316;
         }
-
+        
         .dark .hover\:text-gray-700:hover {
             color: #a0aec0;
         }
-
+        
         .dark .hover\:text-teal-800:hover {
             color: #99f6e4;
         }
-
+        
         .dark .focus\:ring-teal-500:focus {
             --tw-ring-color: #0d9488;
         }
@@ -133,7 +137,12 @@
         .dark .bg-teal-600 {
             background-color: #14b8a6;
         }
-
+        
+        /* New dark mode color for the blog section */
+        .dark .bg-orange-50 {
+            background-color: #2d3748;
+        }
+        
         /* Animated gradient background */
         .animated-bg {
             animation: gradient-shift 15s ease infinite;
@@ -141,17 +150,9 @@
         }
 
         @keyframes gradient-shift {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         /* Custom Cursor */
@@ -170,7 +171,7 @@
         .dark #custom-cursor {
             border-color: #99f6e4;
         }
-
+        
         /* Fixed navigation bar - always visible */
         .fixed-nav {
             position: fixed;
@@ -185,31 +186,31 @@
             display: none; /* Hide by default and show with JS */
         }
 
-            .fixed-nav a {
-                display: block;
-                padding: 0.75rem 1rem;
-                color: #0d9488; /* Teal-700 */
-                font-weight: 600;
-                text-decoration: none;
-                transition: background-color 0.3s, color 0.3s;
-                border-radius: 8px;
-                margin-bottom: 0.5rem;
-            }
+        .fixed-nav a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #0d9488; /* Teal-700 */
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
 
-                .fixed-nav a:hover {
-                    background-color: #f0fdfa; /* Teal-50 */
-                    color: #115e59; /* Teal-900 */
-                }
+        .fixed-nav a:hover {
+            background-color: #f0fdfa; /* Teal-50 */
+            color: #115e59; /* Teal-900 */
+        }
+        
+        .fixed-nav a.active {
+            background-color: #14b8a6; /* Teal-500 */
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-                .fixed-nav a.active {
-                    background-color: #14b8a6; /* Teal-500 */
-                    color: white;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                }
-
-                .fixed-nav a:last-child {
-                    margin-bottom: 0;
-                }
+        .fixed-nav a:last-child {
+            margin-bottom: 0;
+        }
 
         /* Styling for the collapsible experience cards */
         .collapsible-experience {
@@ -223,37 +224,37 @@
             position: relative;
         }
 
-            .collapsible-experience:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-            }
+        .collapsible-experience:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
 
-            .collapsible-experience summary {
-                cursor: pointer;
-                list-style: none; /* Hide default arrow */
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+        .collapsible-experience summary {
+            cursor: pointer;
+            list-style: none; /* Hide default arrow */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .collapsible-experience summary > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
 
-                .collapsible-experience summary > div {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
+        .collapsible-experience summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #14b8a6;
+            transition: transform 0.3s ease-in-out;
+        }
 
-                .collapsible-experience summary::after {
-                    content: '+';
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                    color: #14b8a6;
-                    transition: transform 0.3s ease-in-out;
-                }
-
-            .collapsible-experience[open] summary::after {
-                content: '-';
-                transform: rotate(180deg);
-            }
+        .collapsible-experience[open] summary::after {
+            content: '-';
+            transform: rotate(180deg);
+        }
 
         /* Timeline styling for Professional Experience */
         #experience .collapsible-experience::before {
@@ -289,58 +290,113 @@
             align-items: center;
         }
 
-            .collapsible-skill summary::after {
-                content: '+';
-                font-size: 1.5rem;
-                font-weight: bold;
-                transition: transform 0.3s ease-in-out;
-            }
+        .collapsible-skill summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
 
         .collapsible-skill[open] summary::after {
             content: '-';
             transform: rotate(180deg);
+        }
+
+        /* Custom style for the copy button */
+        .copy-btn {
+            background-color: #cbd5e0;
+            color: #4a5568;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            margin-left: 0.75rem;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .copy-btn:hover {
+            background-color: #a0aec0;
+            transform: scale(1.05);
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .dark .copy-btn {
+          background-color: #a0aec0;
+          color: #1a202c;
+        }
+        
+        .dark .copy-btn:hover {
+          background-color: #cbd5e0;
+        }
+        
+        /* Message Box */
+        #message-box {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #14b8a6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            z-index: 1001;
+            font-size: 0.875rem;
+        }
+        
+        /* Blog Card styling */
+        .blog-card {
+            cursor: pointer;
         }
     </style>
 </head>
 <body class="antialiased">
     <!-- Custom Cursor -->
     <div id="custom-cursor"></div>
+    
+    <!-- Message Box for copy to clipboard -->
+    <div id="message-box" class="hidden"></div>
 
-    <div class="min-h-screen flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 bg-blue-50 animated-bg">
+    <div id="main-portfolio" class="min-h-screen flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 bg-blue-50 animated-bg">
 
         <!-- Hero Section -->
         <header class="w-full max-w-4xl bg-gradient-to-br from-teal-50 to-gray-100 shadow-lg rounded-xl p-8 mb-12 text-center relative">
-
+            
             <!-- Dark Mode Toggle Button -->
             <button id="theme-toggle" class="absolute top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
                 <i class="fas fa-moon" id="moon-icon"></i>
                 <i class="fas fa-sun hidden" id="sun-icon"></i>
             </button>
-
+            
             <!-- Your Photo -->
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Portfolio%20Image.jpg-z4xooiMZLi5oOxHWVIOgFs4rZ8Bq9n.jpeg" alt="Hemasree Uppaluri Venkata Syamala" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-teal-500 shadow-md object-cover object-center">
-
-
+            
+            <!-- Your Name (Main Heading) -->
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-2">Hemasree Uppaluri Venkata Syamala</h1>
+            
             <!-- Adjusted font sizes -->
             <p class="text-lg text-gray-700 mb-1">Data Engineer and AI Development</p>
             <p class="text-4xl font-semibold text-gray-800 mb-2">
-                <span id="typed-text"></span>
+              <span id="typed-text"></span>
             </p>
             <p class="text-base text-gray-700 mb-6">Transforming complex data into actionable insights with expertise in Python, SQL, and advanced AI techniques.</p>
-
+            
             <div class="flex justify-center space-x-4">
                 <a href="https://www.linkedin.com/in/hemasree-uppaluri-venkata-syamala/" class="text-teal-700 hover:text-teal-900 transition duration-300" target="_blank">
                     <i class="fab fa-linkedin fa-2x"></i>
                 </a>
-                <a href="https://github.com/your-github-profile" class="text-gray-700 hover:text-gray-900 transition duration-300" target="_blank">
+                <a href="https://github.com/hemasreeuvs" class="text-gray-700 hover:text-gray-900 transition duration-300" target="_blank">
                     <i class="fab fa-github fa-2x"></i>
                 </a>
             </div>
         </header>
-
+        
         <!-- Fixed Navigation Bar (Dynamically created with JS) -->
         <nav class="fixed-nav" id="fixed-nav">
-            <!-- Links will be added here by JavaScript -->
+          <!-- Links will be added here by JavaScript -->
         </nav>
 
         <!-- Skills Section - Now collapsible -->
@@ -373,7 +429,7 @@
                         <li>Postgresql, Oracle, Microsoft SQL Server, Google Big Query, Neo4j, MySQL, Supabase</li>
                     </ul>
                 </details>
-
+                
                 <!-- AI Practices Card -->
                 <details class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 collapsible-skill">
                     <summary class="text-xl font-semibold text-teal-700">AI Practices</summary>
@@ -383,7 +439,7 @@
                         <li>Data Pipeline Design, RESTful APIs</li>
                     </ul>
                 </details>
-
+                
                 <!-- Other Tools Card -->
                 <details class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 collapsible-skill">
                     <summary class="text-xl font-semibold text-teal-700">Other Tools</summary>
@@ -492,39 +548,56 @@
             </div>
         </section>
 
-        <!-- Blog Section - New addition -->
+        <!-- Blog Section - New addition with click functionality -->
         <section id="blog" class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 mb-12">
             <h2 class="text-3xl font-bold text-gray-800 mb-6 section-heading">Blog</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Blog 1: 3 Things I Would Suggest... -->
-                <div class="bg-gray-50 rounded-lg shadow-md p-6 border border-gray-200">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">3 Things I Would Suggest to Anyone Creating Their Portfolio</h3>
+                <!-- Blog 1: The Double-Edged Sword of AI: Convenience vs. Privacy -->
+                <div class="group bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg blog-card" data-blog-id="ai-privacy">
+                    <span class="text-3xl mb-4 block">⚖️</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors mb-3">The Double-Edged Sword of AI: Convenience vs. Privacy</h3>
+                    <p class="text-gray-700 mb-4">
+                        As AI becomes more integrated into our daily lives, from personalized recommendations to professional tools, a critical question emerges: at what cost to our personal data?
+                    </p>
+                </div>
+                <!-- Blog 2: Beyond the Job Board: Why LinkedIn is Your Daily Professional Hub -->
+                <div class="group bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg blog-card" data-blog-id="linkedin-hub">
+                    <span class="text-3xl mb-4 block">📈</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors mb-3">Beyond the Job Board: Why LinkedIn is Your Daily Professional Hub</h3>
+                    <p class="text-gray-700 mb-4">
+                        LinkedIn has evolved far beyond a place to find your next job. Today, it's a dynamic ecosystem for continuous networking, professional branding, and sharing valuable content.
+                    </p>
+                </div>
+                <!-- Blog 3: 3 Things I Would Suggest... -->
+                <div class="group bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg blog-card" data-blog-id="portfolio-tips">
+                    <span class="text-3xl mb-4 block">💡</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors mb-3">3 Things I Would Suggest to Anyone Creating Their Portfolio</h3>
                     <p class="text-gray-700 mb-4">
                         Building a portfolio can be overwhelming. Here are three key suggestions to make the process easier and more effective.
                     </p>
                 </div>
-
-                <!-- Blog 2: Trying AI Tools for the First Time -->
-                <div class="bg-gray-50 rounded-lg shadow-md p-6 border border-gray-200">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Trying AI Tools for the First Time: What Surprised Me</h3>
+                <!-- Blog 4: Trying AI Tools for the First Time -->
+                <div class="group bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg blog-card" data-blog-id="ai-tools">
+                    <span class="text-3xl mb-4 block">🤔</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors mb-3">Trying AI Tools for the First Time: What Surprised Me</h3>
                     <p class="text-gray-700 mb-4">
-                        My experience exploring various AI tools and what genuinely surprised me about their capabilities. I was amazed at how quickly they could generate a full UI in under 60 seconds!
+                        My experience exploring various AI tools and what genuinely surprised me about their capabilities.
                     </p>
                 </div>
-
-                <!-- Blog 3: Why Short Personal Projects Matter -->
-                <div class="bg-gray-50 rounded-lg shadow-md p-6 border border-gray-200">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Why Short Personal Projects Matter (Even If They're Small)</h3>
+                <!-- Blog 5: The Power of Automation -->
+                <div class="group bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg blog-card" data-blog-id="automation">
+                    <span class="text-3xl mb-4 block">⚙️</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors mb-3">The Power of Automation: Why Every Data Engineer Needs to Code</h3>
                     <p class="text-gray-700 mb-4">
-                        The importance of small projects in building skills and contributing to your growth as a data professional. When we talk about a "project," it's about combining skill + learning into real, meaningful work.
+                        Automation is the heartbeat of a modern data pipeline. Discover how Python scripts can transform repetitive tasks into efficient, hands-off processes.
                     </p>
                 </div>
-
-                <!-- Blog 4: The Importance of Data Cleaning in Any Project -->
-                <div class="bg-gray-50 rounded-lg shadow-md p-6 border border-gray-200">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">The Importance of Data Cleaning in Any Project</h3>
+                <!-- Blog 6: The ETL Journey -->
+                <div class="group bg-white rounded-lg shadow-md p-6 border border-gray-200 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg blog-card" data-blog-id="etl-journey">
+                    <span class="text-3xl mb-4 block">📊</span>
+                    <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors mb-3">From Raw Data to Real Insights: The ETL Journey</h3>
                     <p class="text-gray-700 mb-4">
-                        Before you can analyze data, you need to clean it. This post highlights why data cleaning is the most crucial step in the data science lifecycle and provides practical tips to get started.
+                        Explore the crucial steps of Extraction, Transformation, and Loading (ETL) and how they turn messy, raw data into a clean, valuable asset for business decisions.
                     </p>
                 </div>
             </div>
@@ -532,10 +605,12 @@
 
         <!-- Contact Section - Updated to match the provided design -->
         <section id="contact" class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center section-heading">Get In Touch</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center section-heading">Let's Connect and Build Something Great!</h2>
+            <p class="text-center text-gray-600 mb-8">Whether you have a question, a project idea, or just want to say hello, my inbox is always open.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Contact Information Card -->
-                <div class="bg-amber-50 p-8 rounded-xl shadow-inner border border-gray-200">
+                <div class="bg-teal-50 p-8 rounded-xl shadow-inner border border-gray-200">
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
                     <div class="space-y-6">
                         <!-- Email -->
@@ -543,9 +618,14 @@
                             <div class="bg-orange-500 text-white rounded-lg p-3 shadow-md flex-shrink-0">
                                 <i class="fas fa-envelope fa-lg"></i>
                             </div>
-                            <div class="ml-4">
-                                <p class="text-lg font-medium text-gray-700">Email</p>
-                                <a href="mailto:uvs.hema@gmail.com" class="text-gray-500 hover:text-gray-700 transition duration-300">uvs.hema@gmail.com</a>
+                            <div class="ml-4 flex flex-grow items-center">
+                                <div>
+                                    <p class="text-lg font-medium text-gray-700">Email</p>
+                                    <a href="mailto:uvs.hema@gmail.com" id="email-link" class="text-gray-500 hover:text-gray-700 transition duration-300">uvs.hema@gmail.com</a>
+                                </div>
+                                <button onclick="copyToClipboard('uvs.hema@gmail.com')" class="copy-btn ml-auto">
+                                    <i class="fas fa-copy"></i>
+                                </button>
                             </div>
                         </div>
                         <!-- Phone -->
@@ -553,9 +633,14 @@
                             <div class="bg-orange-500 text-white rounded-lg p-3 shadow-md flex-shrink-0">
                                 <i class="fas fa-phone-alt fa-lg"></i>
                             </div>
-                            <div class="ml-4">
-                                <p class="text-lg font-medium text-gray-700">Phone</p>
-                                <a href="tel:+16028138372" class="text-gray-500 hover:text-gray-700 transition duration-300">+1 (602) 813-8372</a>
+                            <div class="ml-4 flex flex-grow items-center">
+                                <div>
+                                    <p class="text-lg font-medium text-gray-700">Phone</p>
+                                    <a href="tel:+16028138372" id="phone-link" class="text-gray-500 hover:text-gray-700 transition duration-300">+1 (602) 813-8372</a>
+                                </div>
+                                <button onclick="copyToClipboard('+16028138372')" class="copy-btn ml-auto">
+                                    <i class="fas fa-copy"></i>
+                                </button>
                             </div>
                         </div>
                         <!-- GitHub -->
@@ -596,114 +681,257 @@
 
         <!-- Footer -->
         <footer class="w-full max-w-4xl text-center text-gray-500 text-sm mt-12">
-            &copy;
-            2025 Hemasree Uppaluri Venkata Syamala. All rights reserved.
+            &copy; 
+2025 Hemasree Uppaluri Venkata Syamala. All rights reserved.
         </footer>
+    </div>
+    
+    <!-- Blog Post Container (Initially hidden) -->
+    <div id="blog-post-container" class="hidden min-h-screen flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 bg-blue-50 animated-bg">
+        <div class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 mb-12 relative">
+            <button id="back-btn" class="absolute top-4 left-4 text-teal-600 hover:text-teal-800 transition-colors font-semibold">
+                &larr; Back to Portfolio
+            </button>
+            <h1 id="blog-post-title" class="text-4xl font-bold text-gray-800 mt-8 mb-4"></h1>
+            <div id="blog-post-content" class="prose max-w-none text-gray-700"></div>
+        </div>
     </div>
 </body>
 <script>
-    // --- Custom Cursor Logic ---
-    const cursor = document.getElementById('custom-cursor');
-    const links = document.querySelectorAll('a, button, summary');
+    // --- Blog Post Content Data ---
+    const blogPosts = {
+      'ai-privacy': {
+        title: 'The Double-Edged Sword of AI: Convenience vs. Privacy',
+        content: `
+            <p>It's easy to forget how profoundly artificial intelligence has woven itself into the fabric of our daily lives. From the moment we wake up and check our personalized news feeds to the algorithms that recommend our next favorite song or show, AI is constantly at work. This digital convenience has become so seamless that we barely notice it. The AI-powered tools that help us with everything from quick searches to complex data analysis are a source of joy and efficiency for professionals and individuals alike.</p>
+            <p>Yet, as with any revolutionary technology, there’s a deeper, more complex story. The very foundation of this incredible convenience is data—our data. Every click, every search query, every item we purchase online is a piece of information that feeds these powerful models. We get to enjoy a world of personalized experiences, but in return, we are constantly giving away our personal information. It's a quiet, often invisible transaction where the line between what's helpful and what's invasive becomes increasingly blurry.</p>
+            <p>This creates a critical ethical dilemma. As AI models become more sophisticated and data collection becomes more pervasive, the potential for misuse grows. The "hot moment" of building new models, as you said, often overshadows the crucial need for establishing clear rules and regulations. We need to actively discuss and demand a framework that protects individual privacy and ensures data is used responsibly. It's not about stifling innovation but about building a future where AI serves us, rather than the other way around.</p>
+            <p>Ultimately, we have a collective responsibility to understand the full scope of our relationship with AI. It’s about more than just the output; it's about the entire lifecycle, from data collection to deployment. By being more aware, we can advocate for ethical practices and ensure that the future of AI is built on a foundation of trust and respect for privacy.</p>
+        `
+      },
+      'linkedin-hub': {
+        title: 'Beyond the Job Board: Why LinkedIn is Your Daily Professional Hub',
+        content: `
+            <p>LinkedIn has long been seen as a simple online resume or a place to look for jobs. While it's still excellent for that, its function has evolved dramatically. Today, LinkedIn is a dynamic and thriving professional community. It’s a place for continuous networking, professional branding, and sharing valuable content.</p>
+            <p>Instead of just waiting for the next job opportunity to come to you, LinkedIn allows you to proactively build your brand. By regularly posting about your projects, sharing your insights on industry trends, and engaging with content from thought leaders, you establish yourself as an expert. This constant engagement creates a professional 'pulse' that keeps you visible and relevant to recruiters and peers alike.</p>
+            <p>The platform also serves as a powerful learning tool. The articles, webinars, and discussions shared by professionals offer a wealth of knowledge on new technologies, best practices, and career advice. It’s a space where you can ask questions, get feedback, and connect with people who are on a similar career path. In essence, LinkedIn has become a daily professional hub, far more valuable than a static job board.</p>
+        `
+      },
+      'portfolio-tips': {
+        title: '3 Things I Would Suggest to Anyone Creating Their Portfolio',
+        content: `
+            <p>Creating a portfolio can seem like a daunting task, but it doesn't have to be. Here are three key suggestions to make the process easier and more effective:</p>
+            <ol class="list-decimal list-inside space-y-4">
+                <li>
+                    <strong>Focus on storytelling, not just listing.</strong> Instead of just listing your projects and skills, tell a story. Explain the problem you were trying to solve, the technologies you chose and why, the challenges you faced, and the final outcome. A great portfolio shows your thought process and problem-solving abilities, not just your technical skills.
+                </li>
+                <li>
+                    <strong>Don't be afraid to keep it simple.</strong> You don't need dozens of projects. Two or three well-documented, high-quality projects are far more impressive than a dozen half-finished ones. A clean, simple design that is easy to navigate will make a great first impression.
+                </li>
+                <li>
+                    <strong>Showcase your personality.</strong> Your portfolio is a chance to show who you are. Include a professional photo, a well-written summary, and maybe even a blog section. These personal touches help recruiters and hiring managers connect with you on a human level and remember you.</li>
+            </ol>
+            <p>Remember, your portfolio is a living document. It doesn't need to be perfect on day one. Start with the basics and continue to refine it as you grow in your career.</p>
+        `
+      },
+      'ai-tools': {
+        title: 'Trying AI Tools for the First Time: What Surprised Me',
+        content: `
+            <p>As a data engineer, I spend a lot of time with code and data pipelines. However, I recently took some time to explore the latest AI tools designed for content creation, design, and general productivity, and I was genuinely surprised by what I found. I was particularly amazed at how a tool could generate a full UI in under 60 seconds from a simple text prompt. This wasn't just a static image; it was a fully functional HTML/CSS template.</p>
+            <p>My initial expectation was that these tools would be impressive but not practical for a professional setting. I was wrong. The speed and quality of the output, while still requiring human refinement, could significantly accelerate the initial stages of a project. They can help with everything from drafting blog posts and marketing copy to generating code snippets and designing basic website layouts.</p>
+            <p>This experience highlighted a crucial point: AI is not here to replace us, but to empower us. It's a powerful assistant that can handle the more tedious, repetitive tasks, freeing us up to focus on the strategic, creative, and complex challenges that require human insight. For a data professional, this means more time to focus on complex modeling, data architecture, and deriving deeper business insights.</p>
+        `
+      },
+      'automation': {
+        title: 'The Power of Automation: Why Every Data Engineer Needs to Code',
+        content: `
+            <p>In the world of data engineering, efficiency is everything. Manual, repetitive tasks like data extraction, cleaning, and loading not only consume valuable time but also introduce a high risk of human error. This is where the power of automation comes in. By writing scripts—specifically in languages like Python—data engineers can transform these tedious chores into streamlined, hands-off processes.</p>
+            <p>Automation allows for a more reliable and scalable data pipeline. A well-designed Python script can run at scheduled intervals, pull data from multiple sources, apply complex transformations, and load it into a data warehouse, all without human intervention. This frees up the data engineer to focus on more strategic work, such as designing better data architectures, implementing advanced analytics, and exploring new technologies. For example, my experience at Virtuous AI involved automating data extraction from Neo4j, which significantly improved data update efficiency for Ziosk.</p>
+            <p>Ultimately, a strong foundation in coding, particularly in Python, is a superpower for a data engineer. It's the key to building the robust, scalable, and automated systems that are essential for handling the massive volumes of data in today's digital landscape. It's not just about doing the job; it's about doing it smarter and faster.</p>
+        `
+      },
+      'etl-journey': {
+        title: 'From Raw Data to Real Insights: The ETL Journey',
+        content: `
+            <p>Data is often described as the new oil, but just like crude oil, it's useless in its raw form. Before it can fuel business decisions, it must go on a journey. This journey is known as ETL: Extraction, Transformation, and Loading. As a data engineer, mastering this process is fundamental to turning messy, unstructured data into a clean, valuable asset.</p>
+            <p><strong>Extraction</strong> is the first step, where data is collected from various sources. This could be anything from databases and APIs to log files and external websites. It's about pulling the information you need in its raw form.</p>
+            <p><strong>Transformation</strong> is the most critical phase. This is where the raw data is cleaned, standardized, and enriched. You might remove duplicates, handle missing values, convert data types, or join datasets to create a unified view. This step ensures data quality and consistency, which is vital for accurate analysis. For example, at Arizona State University, I designed a pipeline that automated this process, which significantly reduced manual effort.</p>
+            <p>Finally, <strong>Loading</strong> is the process of moving the transformed data into a destination system, such as a data warehouse or a business intelligence tool. This final step makes the data accessible and ready for analysis, empowering users to create reports and dashboards that drive business strategy.</p>
+            <p>The ETL journey is the backbone of any data-driven organization. It's a process that requires meticulous attention to detail and a deep understanding of data systems. By mastering each step, a data engineer can ensure that their organization's data is not just present, but truly valuable.</p>
+        `
+      }
+    };
 
-    document.addEventListener('mousemove', e => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
+    // --- DOM Elements ---
+    const mainPortfolio = document.getElementById('main-portfolio');
+    const blogPostContainer = document.getElementById('blog-post-container');
+    const blogPostTitle = document.getElementById('blog-post-title');
+    const blogPostContent = document.getElementById('blog-post-content');
+    const backBtn = document.getElementById('back-btn');
+    const blogCards = document.querySelectorAll('.blog-card');
+
+    // --- Functions ---
+    function showBlog(blogId) {
+      const post = blogPosts[blogId];
+      if (post) {
+        blogPostTitle.textContent = post.title;
+        blogPostContent.innerHTML = post.content;
+        mainPortfolio.classList.add('hidden');
+        blogPostContainer.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function showPortfolio() {
+      mainPortfolio.classList.remove('hidden');
+      blogPostContainer.classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // --- Event Listeners ---
+    blogCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const blogId = card.getAttribute('data-blog-id');
+        showBlog(blogId);
+      });
     });
 
+    backBtn.addEventListener('click', showPortfolio);
+
+    // --- Custom Cursor Logic ---
+    const cursor = document.getElementById('custom-cursor');
+    const links = document.querySelectorAll('a, button, summary, .blog-card');
+    
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+    
     links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            cursor.style.width = '40px';
-            cursor.style.height = '40px';
-            cursor.style.backgroundColor = 'rgba(20, 184, 166, 0.2)';
-        });
-        link.addEventListener('mouseleave', () => {
-            cursor.style.width = '20px';
-            cursor.style.height = '20px';
-            cursor.style.backgroundColor = 'transparent';
-        });
+      link.addEventListener('mouseenter', () => {
+        cursor.style.width = '40px';
+        cursor.style.height = '40px';
+        cursor.style.backgroundColor = 'rgba(20, 184, 166, 0.2)';
+      });
+      link.addEventListener('mouseleave', () => {
+        cursor.style.width = '20px';
+        cursor.style.height = '20px';
+        cursor.style.backgroundColor = 'transparent';
+      });
     });
 
     // --- Dark Mode Toggle Logic ---
     const themeToggleBtn = document.getElementById('theme-toggle');
     const moonIcon = document.getElementById('moon-icon');
     const sunIcon = document.getElementById('sun-icon');
-
+    
     const currentTheme = localStorage.getItem('theme') || 'light';
-
+    
     if (currentTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+      moonIcon.classList.add('hidden');
+      sunIcon.classList.remove('hidden');
+    }
+    
+    themeToggleBtn.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        moonIcon.classList.remove('hidden');
+        sunIcon.classList.add('hidden');
+      } else {
         document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
         moonIcon.classList.add('hidden');
         sunIcon.classList.remove('hidden');
-    }
-
-    themeToggleBtn.addEventListener('click', () => {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-            moonIcon.classList.remove('hidden');
-            sunIcon.classList.add('hidden');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-            moonIcon.classList.add('hidden');
-            sunIcon.classList.remove('hidden');
-        }
+      }
     });
 
     // --- Typing Animation Logic ---
     function typeEffect(element, text, speed) {
-        let i = 0;
-        element.innerHTML = ''; // Clear the element content first
-        function type() {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            }
+      let i = 0;
+      element.innerHTML = ''; // Clear the element content first
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
         }
-        type();
+      }
+      type();
     }
     const typedTextElement = document.getElementById('typed-text');
     typeEffect(typedTextElement, "Hi, I'm Hemasree", 100);
 
     // --- Dynamic Navigation & Active Link Logic ---
     const navItems = [
-        { id: 'skills', title: 'Skills' },
-        { id: 'experience', title: 'Experience' },
-        { id: 'projects', title: 'Projects' },
-        { id: 'blog', title: 'Blog' },
-        { id: 'contact', title: 'Contact' }
+      { id: 'skills', title: 'Skills' },
+      { id: 'experience', title: 'Experience' },
+      { id: 'projects', title: 'Projects' },
+      { id: 'blog', title: 'Blog' },
+      { id: 'contact', title: 'Contact' }
     ];
-
+    
     const fixedNav = document.getElementById('fixed-nav');
     navItems.forEach(item => {
-        const a = document.createElement('a');
-        a.href = `#${item.id}`;
-        a.textContent = item.title;
-        fixedNav.appendChild(a);
+      const a = document.createElement('a');
+      a.href = `#${item.id}`;
+      a.textContent = item.title;
+      fixedNav.appendChild(a);
     });
     fixedNav.style.display = 'block'; // Show the nav bar now that it's populated
 
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('#fixed-nav a');
-
+    
     window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop - sectionHeight / 3) {
-                current = section.getAttribute('id');
-            }
-        });
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute('id');
+        }
+      });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
-        });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
     });
+    
+    // --- Copy to Clipboard Functionality ---
+    function showMessage(text) {
+        const messageBox = document.getElementById('message-box');
+        messageBox.textContent = text;
+        messageBox.classList.remove('hidden');
+        messageBox.style.opacity = '1';
+        setTimeout(() => {
+            messageBox.style.opacity = '0';
+            messageBox.addEventListener('transitionend', () => {
+                messageBox.classList.add('hidden');
+            }, { once: true });
+        }, 2000);
+    }
+
+    function copyToClipboard(text) {
+        // Create a temporary textarea element
+        const tempTextarea = document.createElement('textarea');
+        tempTextarea.value = text;
+        document.body.appendChild(tempTextarea);
+        
+        // Select and copy the text
+        tempTextarea.select();
+        document.execCommand('copy');
+        
+        // Remove the temporary textarea
+        document.body.removeChild(tempTextarea);
+        
+        // Show a message to the user
+        showMessage('Copied!');
+    }
+    window.copyToClipboard = copyToClipboard; // Expose to global scope for onclick
 </script>
 </html>
